@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HiDODO - 회원가입/메일인증</title>
+    <link rel="stylesheet" href="../../src/stylesheet/common.css" />
+    <link rel="stylesheet" href="../../src/stylesheet/account.css" />
+  </head>
+  <body>
+    <global-nav-bar></global-nav-bar>
+
+    <div class="common-container align-center">
+      <div class="account-box">
+        <div class="account-header">
+          <div class="logo"></div>
+          <div class="txt1">
+            첫 방문 감사합니다!<br />우리아이 첫 영어를 하이도도로 시작하세요!
+          </div>
+        </div>
+        <div class="account-form">
+          <div class="box-heading">메일 인증</div>
+          <div class="email-verification-box">
+            <div class="message">
+              kimdodo@gmai.com으로 인증 번호를 발송했습니다.
+            </div>
+            <div class="input-group">
+              <div class="txt">인증코드 입력(남은시간 <span>09:56</span>)</div>
+              <input
+                type="text"
+                placeholder="인증코드를 입력하세요."
+                class="text-area"
+              />
+              <!-- 인증코드 입력오류 메세지 -->
+              <div class="warning d-none">
+                인증코드 입력 오류입니다. 다시 입력해주세요.
+              </div>
+            </div>
+          </div>
+          <div class="button-group">
+            <button class="btn gray">인증번호 재전송</button>
+            <button class="btn purple-gradient">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 모달: 휴대폰 인증 -->
+    <div class="modal d-none">
+      <div class="modal-box">
+        <button class="btn delete"></button>
+        <div class="phone-verification-form">
+          <div class="text-group">
+            <div>
+              <div class="txt1">휴대폰 인증하고</div>
+              <div class="txt1"><span>7일 무료 쿠폰</span> 받자!</div>
+            </div>
+            <div class="txt2">
+              휴대폰 인증을 완료하시면 7일 무료쿠폰이 문자로 발송됩니다.
+            </div>
+          </div>
+          <div class="input-phone-number">
+            <div class="input-label">연락처</div>
+            <div class="group">
+              <select class="text-area" style="width: 100%; height: 100%">
+                <option>010</option>
+                <option>011</option>
+                <option>016</option>
+                <option>017</option>
+                <option>018</option>
+                <option>019</option>
+              </select>
+              <input type="number" class="text-area" />
+              <input type="number" class="text-area" />
+            </div>
+          </div>
+          <div class="input-verification-code">
+            <div class="input-label">인증코드 입력</div>
+            <input
+              type="text"
+              placeholder="인증코드를 입력하세요."
+              class="text-area"
+            />
+            <div class="group">
+              <label class="check">
+                <span class="checkbox checked"></span>
+                <span>쿠폰/이벤트 및 학습리포트 등 정보 수집 동의(필수)</span>
+              </label>
+              <div class="txt">
+                다양한 할인쿠폰 지급 알림, 할인 이벤트 공지, 주간/월간 학습
+                리포터 등을 받으실 수 있습니다.
+              </div>
+            </div>
+          </div>
+          <button class="btn purple-gradient">OK</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 모달: 경고 메세지 -->
+    <div class="modal d-none">
+      <div class="modal-box">
+        <button class="btn delete"></button>
+        <div class="alert-message">
+          휴대폰 번호가 올바르지 않습니다.<br />
+          다시 입력해주세요.
+        </div>
+        <button class="btn purple-gradient">OK</button>
+      </div>
+    </div>
+
+    <common-footer></common-footer>
+
+    <!-- 콤포넌트 -->
+    <script src="../../src/components/nav-bar.js"></script>
+    <script src="../../src/components/footer.js"></script>
+  </body>
+</html>

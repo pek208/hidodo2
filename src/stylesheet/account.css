@@ -1,0 +1,266 @@
+.account-box {
+  min-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.account-box .account-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.account-box .account-header .logo {
+  width: 200px;
+  height: 125px;
+  background-image: url("/src/assets//images/logo/hi_dodo_logo_big.svg");
+  background-repeat: no-repeat;
+  background-size: 200px auto;
+  background-position: center;
+}
+.account-box .account-header .txt1 {
+  font-size: 1.6em;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  text-align: center;
+}
+.account-box .account-header .txt2 {
+  color: #a0a0a0;
+  font-size: 1.2em;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+.account-box .account-form {
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.account-box .account-form .link-group {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 30px;
+}
+.account-box .account-form .link-group .link {
+  color: var(--gray);
+  font-size: 1.1em;
+  font-weight: 400;
+  position: relative;
+}
+.account-box .account-form .link-group .link:nth-child(1)::after {
+  content: "";
+  width: 1px;
+  height: calc(100% - 6px);
+  background-color: var(--gray);
+  position: absolute;
+  top: 3px;
+  right: -20px;
+}
+.account-box .account-form .box-heading {
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 10px;
+}
+.account-box .account-form .box-heading.bg-confetti {
+  height: 80px;
+  background-image: url("/src/assets/images/bg/confetti.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 1.6em;
+  padding-bottom: 10px;
+}
+.account-box .account-form .box-heading span {
+  color: var(--light-purple);
+}
+.account-box .account-form .box-heading .comment {
+  font-size: 0.6em;
+  font-weight: 400;
+  color: var(--gray);
+  margin-top: 10px;
+}
+.account-box .account-form .email-verification-box {
+  padding: 27px;
+  border: 3px solid var(--light-gray);
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+.account-box .account-form .email-verification-box .message {
+  margin-bottom: 20px;
+}
+.account-box .account-form .email-verification-box .input-group .txt {
+  margin-bottom: 10px;
+}
+.account-box .account-form .email-verification-box .input-group .txt span {
+  color: var(--red);
+}
+.account-box .account-form .email-verification-box .warning {
+  height: 20px;
+  margin: 10px 0;
+  padding-left: 25px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: var(--red);
+}
+.account-box .account-form .email-verification-box .warning::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("/src/assets/images/icons/warning.svg");
+  background-repeat: no-repeat;
+  background-size: 20px auto;
+  background-position: center;
+  position: absolute;
+  left: 0;
+}
+.account-box .account-form .button-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.account-box .account-form .account-info-box {
+  padding: 27px;
+  border: 3px solid var(--light-gray);
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+.account-box .account-form .account-info-box .txt {
+  font-size: 1.4em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.account-box .account-form .account-info-box .table {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 10px;
+}
+.account-box .account-form .account-info-box .table .td1 {
+  color: var(--gray);
+  padding-left: 5px;
+}
+.account-box .account-form .account-info-box .table .td2 {
+  font-weight: 500;
+}
+.account-box .account-form .tabs {
+  display: flex;
+  width: 100%;
+  height: 50px;
+}
+.account-box .account-form .tabs .btn-tab {
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid var(--gray);
+  font-size: 1.2em;
+  font-weight: 700;
+  color: var(--gray);
+}
+.account-box .account-form .tabs .btn-tab.active {
+  border-bottom: 4px solid var(--light-purple);
+  color: var(--light-purple);
+}
+.account-box .account-form #forgotId,
+.account-box .account-form #forgotPassword {
+  display: grid;
+  gap: 10px;
+}
+.account-box .account-form #forgotId .txt,
+.account-box .account-form #forgotPassword .txt {
+  color: var(--light-purple);
+  margin-bottom: 60px;
+}
+.account-box .cut-line {
+  width: 420px;
+  margin: 30px 0;
+  display: grid;
+  grid-template-columns: 1fr 50px 1fr;
+  align-items: center;
+}
+.account-box .cut-line .line {
+  width: 100%;
+  height: 1.5px;
+  background-color: #f0f0f0;
+  border-radius: 100px;
+}
+.account-box .cut-line .txt {
+  text-align: center;
+  color: var(--gray);
+}
+.account-box .social-login-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.account-box .social-login-group .social-icon {
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  background-position: center;
+  background-size: 45px 45px;
+  background-repeat: no-repeat;
+}
+.account-box .social-login-group .social-icon.naver {
+  background-image: url("/src/assets/images/social-icon/social_naver.png");
+}
+.account-box .social-login-group .social-icon.kakao {
+  background-image: url("/src/assets/images/social-icon/social_kakao.png");
+}
+.account-box .social-login-group .social-icon.google {
+  background-image: url("/src/assets/images/social-icon/social_google.png");
+}
+.account-box .social-login-group .social-icon.apple {
+  background-image: url("/src/assets/images/social-icon/social_apple.png");
+}
+
+.phone-verification-form {
+  min-height: 400px;
+  padding: 10px;
+}
+.phone-verification-form .text-group {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+.phone-verification-form .text-group .txt1 {
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 40px;
+}
+.phone-verification-form .text-group .txt1 span {
+  color: var(--light-purple);
+}
+.phone-verification-form .text-group .txt2 {
+  font-size: 1em;
+}
+.phone-verification-form .input-phone-number {
+  margin-bottom: 30px;
+}
+.phone-verification-form .input-phone-number .group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.phone-verification-form .input-verification-code {
+  margin-bottom: 40px;
+}
+.phone-verification-form .input-verification-code .group {
+  display: grid;
+  gap: 20px;
+  margin-top: 20px;
+}
+.phone-verification-form .input-verification-code .group .txt {
+  font-size: 1em;
+}

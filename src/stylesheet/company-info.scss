@@ -1,0 +1,528 @@
+%year{
+    display: flex;
+            gap:50px;
+            align-items: flex-start;
+            background-image: url(../assets/images/company-info/line.png);
+            background-position: left;
+            background-size: 26px 12px;
+            background-repeat: repeat-y;
+            position: relative;
+            .dot{
+                width: 26px;
+                z-index: 3;
+            }
+            .explain{
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                .text-group{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    z-index: 1;
+                    h4{
+                        color: var(--dark);
+                        font-size: 2.2rem;
+                        font-weight: 600;
+                        letter-spacing: -2.5px;
+                        margin: 0;
+                        
+                        
+                    }
+                    p{
+                        color: var(--gray05);
+                        font-size: 1.5rem;
+                        font-weight: 400;
+                        line-height: 36px;
+                        letter-spacing: -1.2px;
+                        margin: 0;
+                    }
+                }
+                .img-group{
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                    gap:20px;
+                    img{
+                        border-radius: 20px;
+                    }
+                }
+                .library{
+                    border-radius: 20px;
+                    width: 1034px;
+                    margin-bottom: 150px;
+                    &:last-child{
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+            ::before{
+                content: url(../assets/images/company-info/2007.svg);
+                position: absolute;
+                top: -60px;
+                left: -75px;
+                z-index: -1;
+            }
+}
+
+.top-visual{
+    width: 100%;
+    height: 500px;
+    background-image: url(../assets/images/company-info/top-img.png);
+    background-position: center;
+    background-size: cover;
+}
+.company-content-box {
+    width: 1100px;
+    margin: auto;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    gap:150px;
+    /* 상단타이틀 */
+    .top-title{
+        display: grid;
+        grid-template-columns: 2fr 4fr;
+
+        h3{
+            color: var(--gary06, #222);
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 60px; 
+            letter-spacing: -2.3px;
+            background-repeat: no-repeat;
+            margin: 0;
+        }
+        p{
+            color: var(--gary06, #222);
+            font-size: 1.4rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 2rem;
+            letter-spacing: -1.3px;
+            margin: 0;
+            span{
+                font-weight: 600;
+            }
+        }
+    }
+    .best-award{
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+        .wearth-group{
+            display: flex;
+            justify-content: space-between;
+            .wreath{
+                width: 354px;
+                height: 97px;
+                background-image: url(../assets/images/company-info/wreath.png);
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                span{
+                    color: var(--gold);
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    letter-spacing: -1.2px;
+                }
+                h3{
+                    color: var(--gold);
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                    line-height: 50px;
+                    letter-spacing: -2px;
+                    margin: 0;
+                }
+            }
+        }
+        h4{
+            color: var(--gold);
+            font-size: 3.2rem;
+            font-weight: 700;
+            line-height: 60px;
+            letter-spacing: -2.5px;
+            margin: 0;
+            text-align: center;
+        }
+    }
+    .shortcuts{
+        display: flex;
+        justify-content: space-between;
+        .rg-shortcuts{
+            width: 400px;
+            height: 510px;
+            background-image: url(../assets/images/company-info/readinggate.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 500px 610px;
+            border-radius: 30px;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .text-group{
+                display: flex;
+                flex-direction: column;
+                gap:6px;
+                .logo-title{
+                    margin: 0;
+                    color: var(--dark);
+                    font-size: 3rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    letter-spacing: -2.5px;
+                }
+                p{
+                    color: var(--gray05);
+                    font-size: 1.86rem;
+                    font-weight: 400;
+                    line-height: 2.3rem;
+                    margin: 0;
+                }
+                .rg-logo{
+                    display: none;
+                }
+            }
+            .plus-round{
+                width: 80px;
+                height: 80px;
+            }
+            .explanation{
+                display: none;
+            }
+
+            &:hover{
+                background: linear-gradient(110deg, #29C4E7 3.73%, #0193FE 74.68%);
+                color: var(--white);
+                .logo-title{
+                    display: none;
+                }
+                .rg-logo{
+                    width: 100%;
+                    display: block;
+                }
+                .plus-round{
+                    display: none;
+                }
+                .explanation{
+                    color: var(--gary02, #F2F3F6);
+                    font-size: 1.6rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 44px; /* 169.231% */
+                    letter-spacing: -1.3px;
+                    margin: 0;
+                    display: block;
+                }
+            }
+
+        }
+        .hidodo-shortcuts{
+            width: 400px;
+            height: 510px;
+            background-image: url(../assets/images/company-info/hidodo.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 500px 610px;
+            border-radius: 30px;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .text-group{
+                display: flex;
+                flex-direction: column;
+                gap:6px;
+                .logo-title{
+                    margin: 0;
+                    color: var(--dark);
+                    font-size: 3rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    letter-spacing: -2.5px;
+                }
+                p{
+                    color: var(--gray05);
+                    font-size: 1.86rem;
+                    font-weight: 400;
+                    line-height: 2.3rem;
+                    margin: 0;
+                }
+                .rg-logo{
+                    display: none;
+                }
+            }
+            .plus-round{
+                width: 80px;
+                height: 80px;
+            }
+            .explanation{
+                display: none;
+            }
+
+            &:hover{
+                background: linear-gradient(331deg, #4416CE 1.87%, #DD468F 94.69%);
+                color: var(--white);
+                .logo-title{
+                    display: none;
+                }
+                .rg-logo{
+                    width: 70%;
+                    display: block;
+                }
+                .plus-round{
+                    display: none;
+                }
+                .explanation{
+                    color: var(--gary02, #F2F3F6);
+                    font-size: 1.6rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 44px; /* 169.231% */
+                    letter-spacing: -1.3px;
+                    margin: 0;
+                    display: block;
+                }
+            }
+
+        }
+
+    }
+    .history{
+        .title-group{
+            margin-bottom: 148px;
+            h3{
+                color: var(--dark);
+                font-size: 3.1rem;
+                font-weight: 600;
+                letter-spacing: -2.5px;
+                margin: 0;
+            }
+            p{
+                color: var(--dark);
+                font-size: 1.86rem;
+                font-weight: 400;
+                line-height: 3.1rem;
+                letter-spacing: -1.5px;
+                margin: 0;
+            }
+        }
+        .years{
+            display: flex;
+            flex-direction: column;
+            .year-2007{
+                @extend %year;
+                padding-bottom: 150px;
+            }
+            .year-2008{
+                @extend %year;
+                ::before{
+                content: url(../assets/images/company-info/2008.svg);
+                }
+                padding-bottom: 150px;
+                .explain{
+                    .img-group{
+                        width: auto;
+                        height: auto;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .year-2017{
+                @extend %year;
+                ::before{
+                content: url(../assets/images/company-info/2017.svg);
+                }
+                padding-bottom: 150px;
+            }
+            .year-2024{
+                @extend %year;
+                background-image: none;
+                ::before{
+                content: url(../assets/images/company-info/2024.svg);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px){
+    .common-container{
+        overflow-x: hidden;
+    }
+    .company-content-box{
+        width: 90%;
+        
+    }
+    .best-award{
+        gap: 30px!important;
+        .wearth-group{
+            .wreath{
+                background-size: 300px!important;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+    .rg-shortcuts, .hidodo-shortcuts{
+        transform: scale(95%);
+    }
+    .history{
+        .explain{
+            .library{
+                max-width: 100%;
+            }
+            .text-group{
+                width: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 700px){
+    .common-container{
+        overflow-x: hidden;
+    }
+    .top-visual{
+        height: 200px;
+    }
+    .company-content-box{
+        padding: 40px 0;
+        gap:60px;
+        .top-title{
+            display: flex!important;
+            flex-direction: column;
+            h3{
+                font-size: 1.5rem;
+                line-height: 2.6rem;
+            }
+            p{
+                font-size: 1.01rem;
+                line-height: 1.7rem;
+            }
+        }
+        .best-award{
+            .wearth-group{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .wreath{
+                    span{
+                        font-size:1.01rem ;
+                    }
+                    h3{
+                        font-size: 1.8rem;
+                        line-height: 2.5rem;
+                    }
+                }
+            }
+            h4{
+                font-size: 1.4rem;
+                letter-spacing: -1.5px;
+            }
+        }
+        .shortcuts{
+            display: flex;
+            flex-direction: column;
+            .rg-shortcuts, .hidodo-shortcuts{
+                max-height: 310px;
+                width: auto;
+                padding: 30px;
+                background-size: 320px;
+                border-radius: 20px;
+                .text-group{
+                    p{
+                        font-size: 1.25rem;
+                        line-height: 1.5rem;
+                    }
+                    .logo-title{
+                        font-size: 2rem;
+                    }
+                }
+                .plus-round{
+                    width: 20%;
+                    height: auto;
+                }
+                .explanation{
+                    font-size: 1.22rem!important;
+                    line-height: 1.8rem!important;
+                }
+            }
+            .rg-shortcuts{
+                width: 90%;
+                height: 410px;
+                background-image: url(../assets/images/company-info/readinggate_mo.png);
+                background-position: center;
+                background-size: cover;
+            }
+            .hidodo-shortcuts{
+                width: 90%;
+                height: 410px;
+                background-image: url(../assets/images/company-info/hidodo_mo.png);
+                background-position: center;
+                background-size: cover;
+            }
+        }
+        .history{
+            .title-group{
+                h3{
+                    font-size: 1.25rem;
+                    line-height: 1.8rem;
+                    letter-spacing: -1.5px;
+                    font-weight: 700;
+                }
+                p{
+                    font-size: 1.01rem;
+                    line-height: 1.2rem;
+                    letter-spacing: -1.2px;
+                }
+                margin-bottom: 80px;
+            }
+            .year-2007, .year-2008, .year-2017, .year-2024{
+                gap:20px!important;
+                padding-bottom: 80px!important;
+                &:last-child{
+                    padding-bottom: 0px!important;
+                }
+                .explain{
+                    .text-group{
+                        h4{
+                            font-size: 1.5rem!important;
+                            line-height: 1.8rem!important;
+                            font-weight: 700;
+                        }
+                        p{
+                            font-size: 1rem!important;
+                            line-height: 1.6rem!important;
+                        }
+                    }  
+                    .library{
+                        max-width: 100%;
+                        width: auto;
+                    }
+                    img{
+                        max-width: 100%!important;
+                        width: auto;
+                        height: auto;
+                        border-radius: 20px;
+                    }
+                    .img-group{
+                        display: grid;
+                        grid-template-columns: repeat(1, 1fr)!important;
+                        max-width: 100%!important;
+                        img{
+                            max-width: 100%!important;
+                            width: auto;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+

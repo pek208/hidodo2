@@ -1,0 +1,493 @@
+@charset "UTF-8";
+.company-content-box .history .years .year-2024, .company-content-box .history .years .year-2017, .company-content-box .history .years .year-2008, .company-content-box .history .years .year-2007 {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  background-image: url(../assets/images/company-info/line.png);
+  background-position: left;
+  background-size: 26px 12px;
+  background-repeat: repeat-y;
+  position: relative;
+}
+.company-content-box .history .years .year-2024 .dot, .company-content-box .history .years .year-2017 .dot, .company-content-box .history .years .year-2008 .dot, .company-content-box .history .years .year-2007 .dot {
+  width: 26px;
+  z-index: 3;
+}
+.company-content-box .history .years .year-2024 .explain, .company-content-box .history .years .year-2017 .explain, .company-content-box .history .years .year-2008 .explain, .company-content-box .history .years .year-2007 .explain {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.company-content-box .history .years .year-2024 .explain .text-group, .company-content-box .history .years .year-2017 .explain .text-group, .company-content-box .history .years .year-2008 .explain .text-group, .company-content-box .history .years .year-2007 .explain .text-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1;
+}
+.company-content-box .history .years .year-2024 .explain .text-group h4, .company-content-box .history .years .year-2017 .explain .text-group h4, .company-content-box .history .years .year-2008 .explain .text-group h4, .company-content-box .history .years .year-2007 .explain .text-group h4 {
+  color: var(--dark);
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: -2.5px;
+  margin: 0;
+}
+.company-content-box .history .years .year-2024 .explain .text-group p, .company-content-box .history .years .year-2017 .explain .text-group p, .company-content-box .history .years .year-2008 .explain .text-group p, .company-content-box .history .years .year-2007 .explain .text-group p {
+  color: var(--gray05);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -1.2px;
+  margin: 0;
+}
+.company-content-box .history .years .year-2024 .explain .img-group, .company-content-box .history .years .year-2017 .explain .img-group, .company-content-box .history .years .year-2008 .explain .img-group, .company-content-box .history .years .year-2007 .explain .img-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.company-content-box .history .years .year-2024 .explain .img-group img, .company-content-box .history .years .year-2017 .explain .img-group img, .company-content-box .history .years .year-2008 .explain .img-group img, .company-content-box .history .years .year-2007 .explain .img-group img {
+  border-radius: 20px;
+}
+.company-content-box .history .years .year-2024 .explain .library, .company-content-box .history .years .year-2017 .explain .library, .company-content-box .history .years .year-2008 .explain .library, .company-content-box .history .years .year-2007 .explain .library {
+  border-radius: 20px;
+  width: 1034px;
+  margin-bottom: 150px;
+}
+.company-content-box .history .years .year-2024 .explain .library:last-child, .company-content-box .history .years .year-2017 .explain .library:last-child, .company-content-box .history .years .year-2008 .explain .library:last-child, .company-content-box .history .years .year-2007 .explain .library:last-child {
+  margin-bottom: 0px;
+}
+.company-content-box .history .years .year-2024 ::before, .company-content-box .history .years .year-2017 ::before, .company-content-box .history .years .year-2008 ::before, .company-content-box .history .years .year-2007 ::before {
+  content: url(../assets/images/company-info/2007.svg);
+  position: absolute;
+  top: -60px;
+  left: -75px;
+  z-index: -1;
+}
+
+.top-visual {
+  width: 100%;
+  height: 500px;
+  background-image: url(../assets/images/company-info/top-img.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.company-content-box {
+  width: 1100px;
+  margin: auto;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+  /* 상단타이틀 */
+}
+.company-content-box .top-title {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+}
+.company-content-box .top-title h3 {
+  color: var(--gary06, #222);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: -2.3px;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+.company-content-box .top-title p {
+  color: var(--gary06, #222);
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: -1.3px;
+  margin: 0;
+}
+.company-content-box .top-title p span {
+  font-weight: 600;
+}
+.company-content-box .best-award {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}
+.company-content-box .best-award .wearth-group {
+  display: flex;
+  justify-content: space-between;
+}
+.company-content-box .best-award .wearth-group .wreath {
+  width: 354px;
+  height: 97px;
+  background-image: url(../assets/images/company-info/wreath.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.company-content-box .best-award .wearth-group .wreath span {
+  color: var(--gold);
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: -1.2px;
+}
+.company-content-box .best-award .wearth-group .wreath h3 {
+  color: var(--gold);
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: -2px;
+  margin: 0;
+}
+.company-content-box .best-award h4 {
+  color: var(--gold);
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: -2.5px;
+  margin: 0;
+  text-align: center;
+}
+.company-content-box .shortcuts {
+  display: flex;
+  justify-content: space-between;
+}
+.company-content-box .shortcuts .rg-shortcuts {
+  width: 400px;
+  height: 510px;
+  background-image: url(../assets/images/company-info/readinggate.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 500px 610px;
+  border-radius: 30px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.company-content-box .shortcuts .rg-shortcuts .text-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.company-content-box .shortcuts .rg-shortcuts .text-group .logo-title {
+  margin: 0;
+  color: var(--dark);
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -2.5px;
+}
+.company-content-box .shortcuts .rg-shortcuts .text-group p {
+  color: var(--gray05);
+  font-size: 1.86rem;
+  font-weight: 400;
+  line-height: 2.3rem;
+  margin: 0;
+}
+.company-content-box .shortcuts .rg-shortcuts .text-group .rg-logo {
+  display: none;
+}
+.company-content-box .shortcuts .rg-shortcuts .plus-round {
+  width: 80px;
+  height: 80px;
+}
+.company-content-box .shortcuts .rg-shortcuts .explanation {
+  display: none;
+}
+.company-content-box .shortcuts .rg-shortcuts:hover {
+  background: linear-gradient(110deg, #29C4E7 3.73%, #0193FE 74.68%);
+  color: var(--white);
+}
+.company-content-box .shortcuts .rg-shortcuts:hover .logo-title {
+  display: none;
+}
+.company-content-box .shortcuts .rg-shortcuts:hover .rg-logo {
+  width: 100%;
+  display: block;
+}
+.company-content-box .shortcuts .rg-shortcuts:hover .plus-round {
+  display: none;
+}
+.company-content-box .shortcuts .rg-shortcuts:hover .explanation {
+  color: var(--gary02, #F2F3F6);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px; /* 169.231% */
+  letter-spacing: -1.3px;
+  margin: 0;
+  display: block;
+}
+.company-content-box .shortcuts .hidodo-shortcuts {
+  width: 400px;
+  height: 510px;
+  background-image: url(../assets/images/company-info/hidodo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 500px 610px;
+  border-radius: 30px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.company-content-box .shortcuts .hidodo-shortcuts .text-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.company-content-box .shortcuts .hidodo-shortcuts .text-group .logo-title {
+  margin: 0;
+  color: var(--dark);
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -2.5px;
+}
+.company-content-box .shortcuts .hidodo-shortcuts .text-group p {
+  color: var(--gray05);
+  font-size: 1.86rem;
+  font-weight: 400;
+  line-height: 2.3rem;
+  margin: 0;
+}
+.company-content-box .shortcuts .hidodo-shortcuts .text-group .rg-logo {
+  display: none;
+}
+.company-content-box .shortcuts .hidodo-shortcuts .plus-round {
+  width: 80px;
+  height: 80px;
+}
+.company-content-box .shortcuts .hidodo-shortcuts .explanation {
+  display: none;
+}
+.company-content-box .shortcuts .hidodo-shortcuts:hover {
+  background: linear-gradient(331deg, #4416CE 1.87%, #DD468F 94.69%);
+  color: var(--white);
+}
+.company-content-box .shortcuts .hidodo-shortcuts:hover .logo-title {
+  display: none;
+}
+.company-content-box .shortcuts .hidodo-shortcuts:hover .rg-logo {
+  width: 70%;
+  display: block;
+}
+.company-content-box .shortcuts .hidodo-shortcuts:hover .plus-round {
+  display: none;
+}
+.company-content-box .shortcuts .hidodo-shortcuts:hover .explanation {
+  color: var(--gary02, #F2F3F6);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px; /* 169.231% */
+  letter-spacing: -1.3px;
+  margin: 0;
+  display: block;
+}
+.company-content-box .history .title-group {
+  margin-bottom: 148px;
+}
+.company-content-box .history .title-group h3 {
+  color: var(--dark);
+  font-size: 3.1rem;
+  font-weight: 600;
+  letter-spacing: -2.5px;
+  margin: 0;
+}
+.company-content-box .history .title-group p {
+  color: var(--dark);
+  font-size: 1.86rem;
+  font-weight: 400;
+  line-height: 3.1rem;
+  letter-spacing: -1.5px;
+  margin: 0;
+}
+.company-content-box .history .years {
+  display: flex;
+  flex-direction: column;
+}
+.company-content-box .history .years .year-2007 {
+  padding-bottom: 150px;
+}
+.company-content-box .history .years .year-2008 {
+  padding-bottom: 150px;
+}
+.company-content-box .history .years .year-2008 ::before {
+  content: url(../assets/images/company-info/2008.svg);
+}
+.company-content-box .history .years .year-2008 .explain .img-group {
+  width: auto;
+  height: auto;
+}
+.company-content-box .history .years .year-2008 .explain .img-group img {
+  width: 100%;
+}
+.company-content-box .history .years .year-2017 {
+  padding-bottom: 150px;
+}
+.company-content-box .history .years .year-2017 ::before {
+  content: url(../assets/images/company-info/2017.svg);
+}
+.company-content-box .history .years .year-2024 {
+  background-image: none;
+}
+.company-content-box .history .years .year-2024 ::before {
+  content: url(../assets/images/company-info/2024.svg);
+}
+
+@media (max-width: 1400px) {
+  .common-container {
+    overflow-x: hidden;
+  }
+  .company-content-box {
+    width: 90%;
+  }
+  .best-award {
+    gap: 30px !important;
+  }
+  .best-award .wearth-group .wreath {
+    background-size: 300px !important;
+    background-repeat: no-repeat;
+  }
+  .rg-shortcuts, .hidodo-shortcuts {
+    transform: scale(95%);
+  }
+  .history .explain .library {
+    max-width: 100%;
+  }
+  .history .explain .text-group {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .common-container {
+    overflow-x: hidden;
+  }
+  .top-visual {
+    height: 200px;
+  }
+  .company-content-box {
+    padding: 40px 0;
+    gap: 60px;
+  }
+  .company-content-box .top-title {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .company-content-box .top-title h3 {
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+  }
+  .company-content-box .top-title p {
+    font-size: 1.01rem;
+    line-height: 1.7rem;
+  }
+  .company-content-box .best-award .wearth-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .company-content-box .best-award .wearth-group .wreath span {
+    font-size: 1.01rem;
+  }
+  .company-content-box .best-award .wearth-group .wreath h3 {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+  .company-content-box .best-award h4 {
+    font-size: 1.4rem;
+    letter-spacing: -1.5px;
+  }
+  .company-content-box .shortcuts {
+    display: flex;
+    flex-direction: column;
+  }
+  .company-content-box .shortcuts .rg-shortcuts, .company-content-box .shortcuts .hidodo-shortcuts {
+    max-height: 310px;
+    width: auto;
+    padding: 30px;
+    background-size: 320px;
+    border-radius: 20px;
+  }
+  .company-content-box .shortcuts .rg-shortcuts .text-group p, .company-content-box .shortcuts .hidodo-shortcuts .text-group p {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  .company-content-box .shortcuts .rg-shortcuts .text-group .logo-title, .company-content-box .shortcuts .hidodo-shortcuts .text-group .logo-title {
+    font-size: 2rem;
+  }
+  .company-content-box .shortcuts .rg-shortcuts .plus-round, .company-content-box .shortcuts .hidodo-shortcuts .plus-round {
+    width: 20%;
+    height: auto;
+  }
+  .company-content-box .shortcuts .rg-shortcuts .explanation, .company-content-box .shortcuts .hidodo-shortcuts .explanation {
+    font-size: 1.22rem !important;
+    line-height: 1.8rem !important;
+  }
+  .company-content-box .shortcuts .rg-shortcuts {
+    width: 90%;
+    height: 410px;
+    background-image: url(../assets/images/company-info/readinggate_mo.png);
+    background-position: center;
+    background-size: cover;
+  }
+  .company-content-box .shortcuts .hidodo-shortcuts {
+    width: 90%;
+    height: 410px;
+    background-image: url(../assets/images/company-info/hidodo_mo.png);
+    background-position: center;
+    background-size: cover;
+  }
+  .company-content-box .history .title-group {
+    margin-bottom: 80px;
+  }
+  .company-content-box .history .title-group h3 {
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+    letter-spacing: -1.5px;
+    font-weight: 700;
+  }
+  .company-content-box .history .title-group p {
+    font-size: 1.01rem;
+    line-height: 1.2rem;
+    letter-spacing: -1.2px;
+  }
+  .company-content-box .history .year-2007, .company-content-box .history .year-2008, .company-content-box .history .year-2017, .company-content-box .history .year-2024 {
+    gap: 20px !important;
+    padding-bottom: 80px !important;
+  }
+  .company-content-box .history .year-2007:last-child, .company-content-box .history .year-2008:last-child, .company-content-box .history .year-2017:last-child, .company-content-box .history .year-2024:last-child {
+    padding-bottom: 0px !important;
+  }
+  .company-content-box .history .year-2007 .explain .text-group h4, .company-content-box .history .year-2008 .explain .text-group h4, .company-content-box .history .year-2017 .explain .text-group h4, .company-content-box .history .year-2024 .explain .text-group h4 {
+    font-size: 1.5rem !important;
+    line-height: 1.8rem !important;
+    font-weight: 700;
+  }
+  .company-content-box .history .year-2007 .explain .text-group p, .company-content-box .history .year-2008 .explain .text-group p, .company-content-box .history .year-2017 .explain .text-group p, .company-content-box .history .year-2024 .explain .text-group p {
+    font-size: 1rem !important;
+    line-height: 1.6rem !important;
+  }
+  .company-content-box .history .year-2007 .explain .library, .company-content-box .history .year-2008 .explain .library, .company-content-box .history .year-2017 .explain .library, .company-content-box .history .year-2024 .explain .library {
+    max-width: 100%;
+    width: auto;
+  }
+  .company-content-box .history .year-2007 .explain img, .company-content-box .history .year-2008 .explain img, .company-content-box .history .year-2017 .explain img, .company-content-box .history .year-2024 .explain img {
+    max-width: 100% !important;
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+  }
+  .company-content-box .history .year-2007 .explain .img-group, .company-content-box .history .year-2008 .explain .img-group, .company-content-box .history .year-2017 .explain .img-group, .company-content-box .history .year-2024 .explain .img-group {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+    max-width: 100% !important;
+  }
+  .company-content-box .history .year-2007 .explain .img-group img, .company-content-box .history .year-2008 .explain .img-group img, .company-content-box .history .year-2017 .explain .img-group img, .company-content-box .history .year-2024 .explain .img-group img {
+    max-width: 100% !important;
+    width: auto;
+    height: auto;
+  }
+}

@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+}
+
+.police_con {
+  width: 1100px;
+  margin: auto;
+  padding: 80px 0;
+}
+.police_con .police_tit {
+  font-size: 2.3rem;
+  line-height: 2.8rem;
+  color: #222;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.police_con .paragraph {
+  gap: 20px;
+  padding-bottom: 50px;
+}
+.police_con .paragraph h2 {
+  color: var(--dark);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: -1.2px;
+  margin-bottom: 10px;
+}
+.police_con .paragraph > p {
+  color: var(--gray04);
+  font-size: 1.03rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: -1.2px;
+  margin-bottom: 0;
+  padding: 5px 0;
+}
+.police_con .paragraph ol {
+  list-style: none;
+  color: var(--gray3);
+  margin: 0px;
+  padding-left: 20px;
+}
+.police_con .paragraph ol p {
+  font-size: 1.03rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  margin: 5px 0;
+}
+.police_con .paragraph ol li {
+  display: flex;
+  gap: 10px;
+  color: var(--gray3);
+  padding: 3px 0;
+}
+.police_con .paragraph ol li .num {
+  border: 1px solid var(--gray3);
+  border-radius: 10px;
+  width: 16px !important;
+  height: 16px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: var(--gray3);
+}
+.police_con .paragraph:last-child {
+  padding-bottom: 0px;
+}
+.police_con .paragraph .White_space {
+  padding-left: 0;
+}
+.police_con .paragraph .White_space li {
+  padding: 8px;
+}
+.police_con .paragraph .price_table {
+  margin-top: 20px;
+}
+.police_con .paragraph .price_table .head {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 50px;
+  background-color: var(--dark);
+  color: var(--white);
+  align-items: center;
+  justify-items: center;
+}
+.police_con .paragraph .price_table .price {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px 0;
+  align-items: center;
+  justify-items: center;
+  border-bottom: 1px solid var(--line-gray);
+  text-align: center;
+}
+
+@media (max-width: 1400px) {
+  .police_con {
+    width: 90%;
+  }
+}

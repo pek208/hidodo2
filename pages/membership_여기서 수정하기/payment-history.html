@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HiDODO - 결제 내역</title>
+    <link rel="stylesheet" href="../../src/stylesheet/common.css" />
+    <link rel="stylesheet" href="../../src/stylesheet/membership.css" />
+  </head>
+  <body>
+    <global-nav-bar></global-nav-bar>
+    <global-nav-bar-mo></global-nav-bar-mo>
+
+    <div class="common-container bg-light">
+      <div class="membership-box">
+        <div class="head-title">멤버쉽</div>
+        <div class="pills">
+          <div class="btn-pill">이용권 구매</div>
+          <div class="btn-pill">티켓 등록</div>
+          <div class="btn-pill active">결제내역</div>
+        </div>
+
+        <div id="paymentHistory" class="m-b-80">
+          <div class="tabs">
+            <div class="btn-tab active">결제내역</div>
+            <div class="btn-tab">환불/해지내역</div>
+          </div>
+
+          <!-- 결제 내역 -->
+          <div id="purchaseList" class="purchase-list">
+            <purchase-list-item
+              label="결제완료"
+              productName="12개월 이용권"
+              purchaseDate="2024.07.01"
+              pg="카카오페이"
+              price="240,000"
+            ></purchase-list-item>
+            <purchase-list-item
+              label="결제완료"
+              productName="12개월 이용권"
+              purchaseDate="2024.07.01"
+              pg="카카오페이"
+              price="240,000"
+            ></purchase-list-item>
+            <purchase-list-item
+              label="결제완료"
+              productName="12개월 이용권"
+              purchaseDate="2024.07.01"
+              pg="카카오페이"
+              price="240,000"
+            ></purchase-list-item>
+            <purchase-list-item
+              label="결제완료"
+              productName="12개월 이용권"
+              purchaseDate="2024.07.01"
+              pg="카카오페이"
+              price="240,000"
+            ></purchase-list-item>
+            <purchase-list-item
+              label="결제완료"
+              productName="12개월 이용권"
+              purchaseDate="2024.07.01"
+              pg="카카오페이"
+              price="240,000"
+            ></purchase-list-item>
+          </div>
+
+          <!-- 환불/해지 내역 -->
+          <div id="refundList" class="refund-list d-none">
+            <refund-list-item
+              label="환불완료"
+              productName="12개월 이용권"
+              price="120,000"
+              refundDate="2024.07.01"
+              refundPrice="100"
+            ></refund-list-item>
+            <refund-list-item
+              label="해지완료"
+              productName="정기구독"
+              price="30,000"
+              refundDate="2024.07.01"
+              unsubscribe="2024.07.03"
+            ></refund-list-item>
+          </div>
+
+          <div class="pagination m-t-40">
+            <div class="pagi-item left-arrow"></div>
+            <div class="pagi-item active">1</div>
+            <div class="pagi-item">2</div>
+            <div class="pagi-item">3</div>
+            <div class="pagi-item">4</div>
+            <div class="pagi-item">5</div>
+            <div class="pagi-item right-arrow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="membership-box-ipad">
+        <div class="head-title">멤버쉽</div>
+        <div class="pills">
+          <div class="btn-pill">멤버쉽 구매</div>
+          <div class="btn-pill">티켓 등록</div>
+          <div class="btn-pill active">이용권 등록 / 결제내역</div>
+        </div>
+
+        <div id="paymentHistory" class="m-b-80">
+          <div class="tabs">
+            <div class="btn-tab active">결제내역</div>
+            <div class="btn-tab">환불/해지내역</div>
+          </div>
+
+          <!-- 결제 내역 -->
+          <div id="purchaseList" class="purchase-list">
+            <purchase-list-item
+              label="결제완료"
+              productName="12개월 이용권"
+              purchaseDate="2024.07.01"
+              pg="카카오페이"
+              price="240,000"
+            ></purchase-list-item>
+            <purchase-list-item
+              label="결제완료"
+              productName="12개월 이용권"
+              purchaseDate="2024.07.01"
+              pg="카카오페이"
+              price="240,000"
+            ></purchase-list-item>
+            <purchase-list-item
+              label="결제완료"
+              productName="12개월 이용권"
+              purchaseDate="2024.07.01"
+              pg="카카오페이"
+              price="240,000"
+            ></purchase-list-item>
+            <purchase-list-item
+              label="결제완료"
+              productName="12개월 이용권"
+              purchaseDate="2024.07.01"
+              pg="카카오페이"
+              price="240,000"
+            ></purchase-list-item>
+            <purchase-list-item
+              label="결제완료"
+              productName="12개월 이용권"
+              purchaseDate="2024.07.01"
+              pg="카카오페이"
+              price="240,000"
+            ></purchase-list-item>
+          </div>
+
+          <!-- 환불/해지 내역 -->
+          <div id="refundList" class="refund-list d-none">
+            <refund-list-item
+              label="환불완료"
+              productName="12개월 이용권"
+              price="120,000"
+              refundDate="2024.07.01"
+              refundPrice="100"
+            ></refund-list-item>
+            <refund-list-item
+              label="해지완료"
+              productName="정기구독"
+              price="30,000"
+              refundDate="2024.07.01"
+              unsubscribe="2024.07.03"
+            ></refund-list-item>
+          </div>
+
+          <div class="pagination m-t-40">
+            <div class="pagi-item left-arrow"></div>
+            <div class="pagi-item active">1</div>
+            <div class="pagi-item">2</div>
+            <div class="pagi-item">3</div>
+            <div class="pagi-item">4</div>
+            <div class="pagi-item">5</div>
+            <div class="pagi-item right-arrow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="membership-box-mo">
+        <div class="head-title">멤버쉽</div>
+        <div class="pills">
+          <div class="btn-pill">멤버쉽 구매</div>
+          <div class="btn-pill">티켓 등록</div>
+          <div class="btn-pill active">이용권 등록 / 결제내역</div>
+        </div>
+
+        <div id="paymentHistory" class="m-b-80">
+          <div class="tabs">
+            <div class="btn-tab active">결제내역</div>
+            <div class="btn-tab">환불/해지내역</div>
+          </div>
+
+          <!-- 결제 내역 -->
+          <div id="purchaseList" class="purchase-list">
+            <purchase-list-item-mo
+              label="결제완료"
+              productName="12개월 이용권"
+              purchaseDate="2024.07.01"
+              pg="카카오페이"
+              price="240,000"
+            ></purchase-list-item-mo>
+            <purchase-list-item-mo
+              label="결제완료"
+              productName="12개월 이용권"
+              purchaseDate="2024.07.01"
+              pg="카카오페이"
+              price="240,000"
+            ></purchase-list-item-mo>
+            <purchase-list-item-mo
+              label="결제완료"
+              productName="12개월 이용권"
+              purchaseDate="2024.07.01"
+              pg="카카오페이"
+              price="240,000"
+            ></purchase-list-item-mo>
+            <purchase-list-item-mo
+              label="결제완료"
+              productName="12개월 이용권"
+              purchaseDate="2024.07.01"
+              pg="카카오페이"
+              price="240,000"
+            ></purchase-list-item-mo>
+            <purchase-list-item-mo
+              label="결제완료"
+              productName="12개월 이용권"
+              purchaseDate="2024.07.01"
+              pg="카카오페이"
+              price="240,000"
+            ></purchase-list-item-mo>
+          </div>
+
+          <!-- 환불/해지 내역 -->
+          <div id="refundList" class="refund-list d-none">
+            <refund-list-item-mo
+              label="환불완료"
+              productName="12개월 이용권"
+              price="120,000"
+              refundDate="2024.07.01"
+              refundPrice="100"
+            ></refund-list-item-mo>
+            <refund-list-item-mo
+              label="해지완료"
+              productName="정기구독"
+              price="30,000"
+              refundDate="2024.07.01"
+              unsubscribe="2024.07.03"
+            ></refund-list-item-mo>
+          </div>
+
+          <div class="pagination m-t-40">
+            <div class="pagi-item left-arrow"></div>
+            <div class="pagi-item active">1</div>
+            <div class="pagi-item">2</div>
+            <div class="pagi-item">3</div>
+            <div class="pagi-item">4</div>
+            <div class="pagi-item">5</div>
+            <div class="pagi-item right-arrow"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <common-footer></common-footer>
+    <common-footer-mo></common-footer-mo>
+
+    <!-- 콤포넌트 -->
+    <script src="../../src/components/nav-bar.js"></script>
+    <script src="../../src/components/nav-bar-mo.js"></script>
+    <script src="../../src/components/footer.js"></script>
+    <script src="../../src/components/footer-mo.js"></script>
+    <script src="../../src/components/purchase-list-item.js"></script>
+    <script src="../../src/components/purchase-list-item-mo.js"></script>
+    <script src="../../src/components/refund-list-item.js"></script>
+  </body>
+</html>

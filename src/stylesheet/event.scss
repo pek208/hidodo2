@@ -1,0 +1,21 @@
+.bg-blue{
+    background-color: #403b7a;
+}
+.con{
+    overflow-x: hidden;
+    section{
+        display: flex;
+        justify-content: center;
+        img{
+            max-width: 100%;
+            height: auto;
+            width: auto;
+        }
+    }
+    .deep-purple{
+        background-color: #433856;
+    }
+    .deep-blue{
+        background-color: #2e2d35;
+    }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HiDODO - 아이디, 비번 찾기</title>
+    <link rel="stylesheet" href="../../src/stylesheet/common.css" />
+    <link rel="stylesheet" href="../../src/stylesheet/account.css" />
+  </head>
+  <body>
+    <global-nav-bar></global-nav-bar>
+
+    <div class="common-container align-center">
+      <div class="account-box">
+        <div class="account-header">
+          <div class="logo"></div>
+        </div>
+        <div class="account-form">
+          <!-- 아이디, 비번 찾기 실행 -->
+          <div id="forgot">
+            <div class="box-heading">
+              <div>아이디 찾기</div>
+              <div class="comment">
+                회원가입 시 등록한 정보를 입력해 주세요.
+              </div>
+            </div>
+            <div class="tabs m-y-30">
+              <div class="btn-tab active">아이디 찾기</div>
+              <div class="btn-tab">비밀번호 찾기</div>
+            </div>
+
+            <!-- 아이디 찾기 -->
+            <div id="forgotId">
+              <div class="radio active">닉네임으로 찾기</div>
+              <input
+                type="text"
+                placeholder="닉네임을 입력하세요."
+                class="text-area"
+              />
+              <div class="txt">가입시 등록한 닉네임을 입력하세요.</div>
+              <button class="btn purple-gradient">아이디 찾기</button>
+            </div>
+
+            <!-- 비밀번호 찾기 -->
+            <div id="forgotPassword" class="d-none">
+              <div class="radio active">(이메일)아이디로 찾기</div>
+              <input
+                type="text"
+                placeholder="(이메일)아이디를 입력하세요."
+                class="text-area"
+              />
+              <div class="txt">가입시 등록한 (이메일)아이디를 입력하세요.</div>
+              <button class="btn purple-gradient">비밀번호 찾기</button>
+            </div>
+
+            <!-- 모달: 비밀번호 찾기 결과 -->
+            <div class="modal d-none">
+              <div class="modal-box">
+                <button class="btn delete"></button>
+                <div class="alert-message">
+                  <b>임시 비밀번호가 발급되었습니다.</b>
+                  입력하신 메일함을 참고하시기 바랍니다.
+                </div>
+                <button class="btn purple-gradient">OK</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 아이디 찾기 결과 -->
+          <div id="idFoundResult" class="d-none">
+            <div class="box-heading m-b-30">
+              <div>아이디 찾기 결과</div>
+            </div>
+            <div class="account-info-box">
+              <div class="txt">회원정보</div>
+              <div class="table">
+                <div class="td1">이메일</div>
+                <div class="td2">**dodo@readinggate.com</div>
+                <div class="td1">닉네임</div>
+                <div class="td2">고고하이도도</div>
+                <div class="td1">가입일</div>
+                <div class="td2">2024-04-03</div>
+              </div>
+            </div>
+            <button class="btn purple-gradient">로그인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <common-footer></common-footer>
+
+    <!-- 콤포넌트 -->
+    <script src="../../src/components/nav-bar.js"></script>
+    <script src="../../src/components/footer.js"></script>
+  </body>
+</html>

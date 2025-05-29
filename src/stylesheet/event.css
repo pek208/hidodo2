@@ -1,0 +1,22 @@
+.bg-blue {
+  background-color: #403b7a;
+}
+
+.con {
+  overflow-x: hidden;
+}
+.con section {
+  display: flex;
+  justify-content: center;
+}
+.con section img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+.con .deep-purple {
+  background-color: #433856;
+}
+.con .deep-blue {
+  background-color: #2e2d35;
+}

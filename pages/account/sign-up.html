@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HiDODO - 회원가입</title>
+    <link rel="stylesheet" href="../../src/stylesheet/common.css" />
+    <link rel="stylesheet" href="../../src/stylesheet/account.css" />
+  </head>
+  <body>
+    <global-nav-bar></global-nav-bar>
+
+    <div class="common-container align-center">
+      <div class="account-box">
+        <div class="account-header">
+          <div class="logo"></div>
+          <div class="txt1">
+            첫 방문 감사합니다!<br />우리아이 첫 영어를 하이도도로 시작하세요!
+          </div>
+        </div>
+        <div class="account-form">
+          <input
+            type="email"
+            placeholder="이메일을 입력하세요."
+            class="text-area"
+          />
+          <input
+            type="password"
+            placeholder="비밀번호 입력"
+            class="text-area"
+          />
+          <input
+            type="password"
+            placeholder="비밀번호 확인"
+            class="text-area"
+          />
+          <div class="m-t-10">
+            비밀번호는 영문, 숫자 조합 8~12글자로 입력해주세요.
+          </div>
+          <div class="m-t-10 m-b-20">
+            <label class="check m-b-10">
+              <span class="checkbox checked"></span>
+              <span>[필수] 본 회원가입 작성자는 만 14세 이상입니다.</span>
+            </label>
+            <label class="check">
+              <span class="checkbox checked"></span>
+              <span>[필수] 이용약관 및 개인정보 처리방침에 동의합니다.</span>
+            </label>
+          </div>
+          <button class="btn purple-gradient">가입신청</button>
+        </div>
+        <div class="cut-line">
+          <span class="line"></span>
+          <span class="txt">또는</span>
+          <span class="line"></span>
+        </div>
+        <div class="social-login-group">
+          <div class="social-icon naver"></div>
+          <div class="social-icon kakao"></div>
+          <div class="social-icon google"></div>
+          <div class="social-icon apple"></div>
+        </div>
+      </div>
+    </div>
+
+    <common-footer></common-footer>
+
+    <!-- 콤포넌트 -->
+    <script src="../../src/components/nav-bar.js"></script>
+    <script src="../../src/components/footer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HiDODO - 로그인</title>
+    <link rel="stylesheet" href="../../src/stylesheet/common.css" />
+    <link rel="stylesheet" href="../../src/stylesheet/account.css" />
+  </head>
+  <body>
+    <global-nav-bar></global-nav-bar>
+
+    <div class="common-container align-center">
+      <div class="account-box">
+        <div class="account-header">
+          <div class="logo"></div>
+          <div class="txt1">AI 키즈영어 프리스쿨 앱, 하이도도입니다.</div>
+          <div class="txt2">
+            하이도도 서비스를 이용하시려면 로그인해 주세요.
+          </div>
+        </div>
+        <div class="account-form">
+          <input
+            type="email"
+            placeholder="이메일을 입력하세요."
+            class="text-area"
+          />
+          <input
+            type="password"
+            placeholder="비밀번호를 입력하세요."
+            class="text-area"
+          />
+          <label class="check m-y-20">
+            <span class="checkbox checked"></span>
+            <span>로그인 상태 유지</span>
+          </label>
+          <button class="btn purple-gradient">로그인</button>
+          <div class="link-group">
+            <a href="#" class="link">회원 가입하기</a>
+            <a href="#" class="link">아이디/비밀번호 찾기</a>
+          </div>
+        </div>
+        <div class="cut-line">
+          <span class="line"></span>
+          <span class="txt">또는</span>
+          <span class="line"></span>
+        </div>
+        <div class="social-login-group">
+          <div class="social-icon naver"></div>
+          <div class="social-icon kakao"></div>
+          <div class="social-icon google"></div>
+          <div class="social-icon apple"></div>
+        </div>
+      </div>
+    </div>
+
+    <common-footer></common-footer>
+
+    <!-- 콤포넌트 -->
+    <script src="../../src/components/nav-bar.js"></script>
+    <script src="../../src/components/footer.js"></script>
+  </body>
+</html>

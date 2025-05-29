@@ -1,0 +1,53 @@
+@charset "UTF-8";
+.sightword {
+  border: 6px solid #59267A !important;
+}
+.sightword .img-box {
+  background-color: #59267A !important;
+}
+.sightword .img-box .thurm-img {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 16px 16px 0 0 !important;
+}
+.sightword .text-box {
+  background-color: #59267A !important;
+}
+.sightword .text-box .text p, .sightword .text-box .text h2 {
+  color: #FFFFFF !important;
+}
+
+.sightword-thurm {
+  border: 6px solid #BB6986 !important;
+}
+.sightword-thurm .sightword-bg {
+  background-image: url("../../src/assets/images/info-use/shightword/shightword-bg.png") !important;
+  background-size: cover !important;
+  background-position: top center; /* 중앙 정렬 */
+  background-repeat: no-repeat;
+  border-radius: 12px 12px 0 0 !important;
+  color: #59267A !important;
+  padding: 56px 0 32px 0 !important;
+  gap: 12px;
+}
+.sightword-thurm .sightword-bg p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+.sightword-thurm .sightword-bg h1 {
+  margin: 0;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+.sightword-thurm .text-box {
+  background-color: #BB6986 !important;
+  width: 90% !important;
+  border-radius: 0 0 13px 13px !important;
+}
+.sightword-thurm .text-box .text p, .sightword-thurm .text-box .text h2 {
+  color: #FFFFFF !important;
+}

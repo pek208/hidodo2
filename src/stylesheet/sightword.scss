@@ -1,0 +1,56 @@
+.sightword{
+    border: 6px solid #59267A !important;
+    .img-box{
+        background-color: #59267A !important;
+        .thurm-img{
+            width: 100%!important;
+            height: 100%!important;
+            border-radius: 16px 16px 0 0!important;
+        }
+    }
+    .text-box{
+        background-color: #59267A !important;
+        .text{
+            p, h2{
+                color: #FFFFFF !important;
+            }
+        }
+    }
+}
+.sightword-thurm{
+      border: 6px solid #BB6986!important;
+      .sightword-bg{
+        background-image: url("../../src/assets/images/info-use/shightword/shightword-bg.png") !important;
+        background-size: cover !important;
+        background-position: top center;   /* 중앙 정렬 */
+        background-repeat: no-repeat;
+        border-radius: 12px 12px 0 0!important;
+        color: #59267A !important;
+        padding: 56px 0 32px 0 !important;
+        gap: 12px;
+            p{
+                margin: 0;
+                font-size: 16px;
+                font-weight: 800;
+                letter-spacing: -1px;
+            }
+            h1{
+                margin: 0;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 800;
+                letter-spacing: -1px;
+            }
+
+      }
+      .text-box{
+        background-color: #BB6986 !important;
+        width: 90%!important;
+        border-radius: 0 0 13px 13px!important;
+        .text{
+            p, h2{
+                color: #FFFFFF !important;
+            }
+        }
+    }
+}
