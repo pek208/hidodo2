@@ -184,6 +184,9 @@ $common_footer_height: 220px;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 150;
   .gnb-container {
     width: $container_width;
     display: grid;
@@ -294,6 +297,9 @@ $common_footer_height: 220px;
         height: 24px;
       }
     }
+  }
+  &.unsticky {
+      position: static !important; 
   }
 }
 

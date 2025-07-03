@@ -69,6 +69,7 @@ $(function () {
     slidesToScroll: 1,
     dots: false,
     arrows: false,
+    adaptiveHeight: false,
     responsive: [
       {
         breakpoint: 768, // 모바일 기준
@@ -112,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       root: null,
-      rootMargin: "0px 0px -60% 0px", // 섹션이 상단에 도달했을 때 감지되도록
+      rootMargin: "0px 0px -50% 0px", // 섹션이 상단에 도달했을 때 감지되도록
       threshold: 0.1,
     }
   );

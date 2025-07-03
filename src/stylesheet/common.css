@@ -159,6 +159,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 150;
 }
 .global-nav-bar .gnb-container {
   width: var(--container_width);
@@ -268,6 +271,9 @@ a {
 }
 .global-nav-bar .gnb-container .event img {
   height: 24px;
+}
+.global-nav-bar.unsticky {
+  position: static !important;
 }
 
 .global-nav-bar-mo {
