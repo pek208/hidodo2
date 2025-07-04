@@ -26,11 +26,13 @@ $(function () {
 
   $slider.slick({
     infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
     dots: false,
     arrows: false,
     autoplay: true,
+    variableWidth: true, 
   });
 
   setTimeout(() => {
@@ -80,7 +82,7 @@ $(function () {
     ]
   });
 });
-
+/* 리뷰 슬라이드 모바일 끝*/
 
 
 

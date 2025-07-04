@@ -71,7 +71,7 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-    padding-top: 220px;
+    padding-top: 180px;
     .sub-headline{
         display: flex;
         gap: 14px;
@@ -194,7 +194,7 @@
             align-self: stretch;
             margin: 0;
             justify-content: center;
-            gap: 12px;
+            gap: 4px;
             &::after{
                 content: '';
                 position: absolute;
@@ -484,6 +484,8 @@
     }
     .slider{
         padding: var(--headline-margin) 0;
+        flex-shrink: 0;
+        overflow: visible; 
         .multiple-items{
             height: 240px!important;
             .slide{
@@ -491,13 +493,15 @@
                 display: flex;
                 border-radius: 30px;
                 margin: 0 15px;
+                width: 780px !important;
                 .photo{
                     border-radius: 30px;
-                    width: 304px;
-                    height: 240px;
+                    aspect-ratio: 4 / 3;
+                    width: 240px;
+                    height: auto;
                 }
                 .reveiw-dec{
-                    padding: 0 40px;
+                    padding: 0 30px;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -538,6 +542,11 @@
                     }
                 }
             }
+        .slick-track {
+                    display: flex !important;
+                    align-items: center;
+                    height: 240px !important;
+                }    
     }
     .round-l{
         position: absolute;
@@ -1066,7 +1075,7 @@
             h5{
                 color: var(--white);
                 text-align: center;
-                font-size: var(--fz-heading-xl);
+                font-size: var(--fz-heading-md);
                 font-weight: 800;
                 line-height: 130%; 
                 letter-spacing: -2.4px;
@@ -1542,6 +1551,9 @@
                         margin: 0;
                         width: 215px;
                     }
+                    .mo{
+                        display: none;
+                    }
                 }
                 img{
                     border-radius: 20px;
@@ -1951,6 +1963,9 @@
                     display: flex;
                     flex-direction: row;
                     gap:10px;
+                    .w120{
+                            width: 120px!important;
+                        }
                 }
                 .list-gradation{
                     border-radius: 30px 30px 0px 0px;
@@ -2094,8 +2109,8 @@
         overflow-x: hidden;
         }
     .headline{
-        padding:170px 0px 0px 0px;
-        width: var(--content-width-pad);
+        padding:100px 60px;
+        width: calc(var(--content-width-pad) - 120px);
         .sub-headline{
             font-size: var(--fz-body-lg);
         }
@@ -2127,31 +2142,11 @@
         }
     }
     .step01{
-        overflow-x: hidden;
-        .slider {
-            height: 590px;
-            .custom-progress-container{
-                top: 300px;
-            }
-            .multiple-items{
-                .slide {
-                    flex-direction: column;
-                    .photo{
-                        width: 100%;
-                        height: auto;
-                    }
-                    .reveiw-dec{
-                        padding: 0 20px;
-                        min-height: 240px;
-
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-                    }
-                }
-            }
+        .slider{
+            width: 100% !important;
         }
-    }  
+    }
+    
     .step01-mo{
         display: none;
     } 
@@ -2179,7 +2174,10 @@
             .card{
                 width: 240px;
                 h5{
-                    font-size: var(--fz-heading-md);
+                    font-size: var(--fz-heading-base);
+                }
+                p{
+                    font-size: var(--fz-body-xl);
                 }
             }
         }
@@ -2244,6 +2242,12 @@
                         }
                         p{
                             width: 100%;
+                        }
+                        .web{
+                            display: none;
+                        }
+                        .mo{
+                            display: block;
                         }
                     }
                     
@@ -2343,6 +2347,7 @@
         }
         .main-headline-group{
             padding-top: 20px;
+            letter-spacing: -2.2px!important;
             .main-headline2{
                 gap:0px;
                 &::before{
@@ -2723,7 +2728,13 @@
                     p{
                         width: 90%!important;
                     }
-                }
+                    .web{
+                            display: none!important;
+                        }
+                    .mo{
+                            display: block!important;
+                        }
+                }    
                 img{
                     width: 100%!important;
                     height: auto!important;
@@ -2821,6 +2832,7 @@
                 }
             }
         }
+
         .round-l{
             position: absolute;
             bottom: -20px;

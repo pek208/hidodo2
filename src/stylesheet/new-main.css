@@ -74,7 +74,7 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding-top: 220px;
+  padding-top: 180px;
 }
 .headline .sub-headline {
   display: flex;
@@ -199,7 +199,7 @@
   align-self: stretch;
   margin: 0;
   justify-content: center;
-  gap: 12px;
+  gap: 4px;
 }
 .headline1 .main-headline-group .main-headline2::after {
   content: "";
@@ -490,6 +490,8 @@
 }
 .step01 .slider {
   padding: var(--headline-margin) 0;
+  flex-shrink: 0;
+  overflow: visible;
   /* 커스텀 진행 바 */
 }
 .step01 .slider .multiple-items {
@@ -500,14 +502,16 @@
   display: flex;
   border-radius: 30px;
   margin: 0 15px;
+  width: 780px !important;
 }
 .step01 .slider .multiple-items .slide .photo {
   border-radius: 30px;
-  width: 304px;
-  height: 240px;
+  aspect-ratio: 4/3;
+  width: 240px;
+  height: auto;
 }
 .step01 .slider .multiple-items .slide .reveiw-dec {
-  padding: 0 40px;
+  padding: 0 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -543,6 +547,11 @@
   background-color: #d6a000;
   border-radius: 10px;
   transition: left 0.3s ease; /* 부드럽게 이동 */
+}
+.step01 .slider .slick-track {
+  display: flex !important;
+  align-items: center;
+  height: 240px !important;
 }
 .step01 .round-l {
   position: absolute;
@@ -1066,7 +1075,7 @@
 .step04 .card-group .card h5 {
   color: var(--white);
   text-align: center;
-  font-size: var(--fz-heading-xl);
+  font-size: var(--fz-heading-md);
   font-weight: 800;
   line-height: 130%;
   letter-spacing: -2.4px;
@@ -1535,6 +1544,9 @@
   margin: 0;
   width: 215px;
 }
+.step06 .feature-section .course-list .course-card .course-title-group .mo {
+  display: none;
+}
 .step06 .feature-section .course-list .course-card img {
   border-radius: 20px;
 }
@@ -1898,6 +1910,9 @@
   flex-direction: row;
   gap: 10px;
 }
+.step08 .feature-comparison__column .table-group .feature-comparison__column--hidodo .dodo-list .w120 {
+  width: 120px !important;
+}
 .step08 .feature-comparison__column .table-group .feature-comparison__column--hidodo .list-gradation {
   border-radius: 30px 30px 0px 0px;
   border-bottom: 1px solid #E2DDEF;
@@ -2031,8 +2046,8 @@
     overflow-x: hidden;
   }
   .headline {
-    padding: 170px 0px 0px 0px;
-    width: var(--content-width-pad);
+    padding: 100px 60px;
+    width: calc(var(--content-width-pad) - 120px);
   }
   .headline .sub-headline {
     font-size: var(--fz-body-lg);
@@ -2052,28 +2067,8 @@
   .headline3 h1 {
     font-size: var(--fz-heading-md);
   }
-  .step01 {
-    overflow-x: hidden;
-  }
   .step01 .slider {
-    height: 590px;
-  }
-  .step01 .slider .custom-progress-container {
-    top: 300px;
-  }
-  .step01 .slider .multiple-items .slide {
-    flex-direction: column;
-  }
-  .step01 .slider .multiple-items .slide .photo {
-    width: 100%;
-    height: auto;
-  }
-  .step01 .slider .multiple-items .slide .reveiw-dec {
-    padding: 0 20px;
-    min-height: 240px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    width: 100% !important;
   }
   .step01-mo {
     display: none;
@@ -2097,7 +2092,10 @@
     width: 240px;
   }
   .step04 .card-group .card h5 {
-    font-size: var(--fz-heading-md);
+    font-size: var(--fz-heading-base);
+  }
+  .step04 .card-group .card p {
+    font-size: var(--fz-body-xl);
   }
   .step04 .headline2-mo {
     display: none;
@@ -2151,6 +2149,12 @@
   }
   .step06 .feature-section .course-list .course-card .course-title-group p {
     width: 100%;
+  }
+  .step06 .feature-section .course-list .course-card .course-title-group .web {
+    display: none;
+  }
+  .step06 .feature-section .course-list .course-card .course-title-group .mo {
+    display: block;
   }
   .step06 .feature-section .content-group .content-title-group .content-title {
     font-size: var(--fz-body-lg);
@@ -2227,6 +2231,7 @@
   }
   .headline1 .main-headline-group {
     padding-top: 20px;
+    letter-spacing: -2.2px !important;
   }
   .headline1 .main-headline-group .main-headline2 {
     gap: 0px;
@@ -2592,6 +2597,12 @@
   }
   .step06 .course-list .course-card .course-title-group p {
     width: 90% !important;
+  }
+  .step06 .course-list .course-card .course-title-group .web {
+    display: none !important;
+  }
+  .step06 .course-list .course-card .course-title-group .mo {
+    display: block !important;
   }
   .step06 .course-list .course-card img {
     width: 100% !important;
