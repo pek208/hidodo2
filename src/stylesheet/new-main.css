@@ -26,7 +26,7 @@
   --contents-space-mo-sm:60px;
   --contents-space-mo-md:80px;
   --headline-family-light:"NanumSquareNeo";
-  --headline-family:"NanumSquareNeoExtraBold";
+  --headline-family:"NanumSquareNeoBold";
   --headline-space-1:30px;
   --headline-space-2:20px;
   --headline-space-mo-1:10px;
@@ -1464,7 +1464,7 @@
   flex-direction: column;
   gap: 8px;
   display: flex;
-  padding: 30px;
+  padding: 30px 10px;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
