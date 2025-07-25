@@ -399,6 +399,45 @@
   left: calc(50% - 340px);
 }
 
+.event-pop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 반투명 배경 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  gap: 0px;
+}
+.event-pop .img-group img {
+  border-radius: 20px 20px 0 0;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.event-pop .bottom {
+  background-color: white;
+  width: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  margin: 0;
+  border-radius: 0 0 20px 20px;
+}
+.event-pop .bottom .today-close {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.event-pop .bottom .close {
+  color: var(--vivid-pink2);
+}
+
 .main-visual {
   background: url("../assets/images/new-main2/main-top-bg.png") no-repeat center center/cover fixed;
   height: calc(100vh - 86px);
