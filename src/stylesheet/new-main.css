@@ -502,6 +502,10 @@
   box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.08);
 }
 
+.main-viaual-cts {
+  height: 100vh !important;
+}
+
 .step01 {
   padding: var(--contents-space) 0 0 0;
   display: flex;
